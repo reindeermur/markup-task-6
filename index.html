@@ -2,8 +2,374 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Морда»</title>
+    <title>Яндекс.Морда</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main>
+        <div class="head_conteiner">
+            <div class="map">
+                <a class="geo" href="https://yandex.ru/tune/geo/">Екатеринбург</a>
+            </div>
+            <div class="settinds">
+                <input type="checkbox" name="settinds" id="csettinds">
+                <label for="settinds" class="open">
+                    Настройки
+                </label>
+                <div class="settings_tabs">
+                    <input type="checkbox" id="popular" checked>
+                    <label for="popular">Посещяемое</label>
+                    <input type="checkbox" id="joke" checked>
+                    <label for="joke">Лучшие анекдоты</label>
+                    <input type="checkbox" id="tv" checked>
+                    <label for="tv">Телепрограмма</label>
+                    <input type="checkbox" id="auto" checked>
+                    <label for="auto">Автомобильные новости</label>
+                    <input type="checkbox" id="weather" checked>
+                    <label for="weather">Погода</label>
+                    <input type="checkbox" id="sity_map" checked>
+                    <label for="sity_map">Карта Екатеринбурга</label>
+                    <input type="checkbox" id="jams" checked>
+                    <label for="jams">Пробки</label>
+                    <input type="checkbox" id="posters" checked>
+                    <label for="posters">Афиша</label>
+                </div>
+            </div>
+        </div>
+        <div class="main_conteiner">
+            <div class="mail">
+
+            </div>
+            <div class="first_conteiner">
+                <div class="news">
+                    <span class="date">21 ноября, вторник 13:53</span>
+                    <ul class="content_news">
+                        <li>
+                            <a href="http://bit.ly/2hQqJlL">
+                                Путин объявил о скором завершении военной операции в Сирии
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2zUrRv7">
+                                Предприятие «Маяк» отрицает причастность к выбросу рутения
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2zTWqRH">
+                                Школьник из ЯНАО рассказал в 
+                                Бундестаге о «невинных солдатах вермахта»
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2hOFDZB">
+                                Порошенко сменил цвет беретов украинских десантников на бордовый
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2AYElzl">
+                                Задержанный в Минске украинский журналист признался в шпионаже
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="currencies">
+                        <div>
+                            <a href="https://news.yandex.ru/quotes/1.html">
+                                USD ЦБ
+                            </a>
+                            <span>59,46</span>
+                            <span class="persent">+0,19</span>
+                        </div>
+                        <div>
+                            <a href="https://news.yandex.ru/quotes/23.html">
+                                EUR ЦБ
+                            </a>
+                            <span>69,67</span>
+                        </div>
+                        <div>
+                            <a href="https://news.yandex.ru/quotes/1006.html">
+                                НЕФТЬ
+                            </a>
+                            <span>62,58</span>
+                            <span class="persent">+0,72%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertising">
+                    <a><img=""></a>
+                    <span>Как выиграть билет</span>
+                    <span>на концерт Эда Ширана</span>
+                    <p>Узнайте на Яндекс.Музыке</p>
+                </div>
+            </div>
+            <div class="search">
+                <nav class="home_tabs">
+                    <a class="tabs_link" href="https://yandex.ru/video/">Видео</a>
+                    <a class="tabs_link" href="https://yandex.ru/images/">Картинки</a>
+                    <a class="tabs_link" href="https://news.yandex.ru/">Новости</a>
+                    <a class="tabs_link" href="https://yandex.ru/maps">Карты</a>
+                    <a class="tabs_link" href="https://market.yandex.ru/">Маркет</a>
+                    <a class="tabs_link" href="https://translate.yandex.ru/">Переводчик</a>
+                    <a class="tabs_link" href="https://music.yandex.ru/">Музыка</a>
+                    <a class="tabs_link" 
+                    href="https://developer.mozilla.org/ru/docs/Web/JavaScript">
+                        Порно
+                    </a>
+                </nav>
+                <div class="search_wrapp">
+                    <form>
+
+                    </form>
+                </div>
+                <div class="example">
+                    <span>Найдётся всё. Например, </span>
+                    <a href="http://bit.ly/2A1f4Fo" class="example_search">
+                        маленький принц
+                    </a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="photo">
+
+                </div>
+                <div class="card weather">
+                    <h3>
+                        <a href="https://yandex.ru/pogoda/yekaterinburg">
+                            Погода 0 °C</a>
+                    </h3>
+                    <ul class="weather_list">
+                        <li>
+                            <a href="https://yandex.ru/pogoda/yekaterinburg">
+                                Вечер&nbsp;−3</a>
+                            , &nbsp;
+                            <a href="https://yandex.ru/pogoda/yekaterinburg">
+                                ночь&nbsp;−4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="сard_joke">
+                    <h3>
+                        <a href="#">Лучшие анекдоты</a>
+                    </h3>
+                </div>
+                <div class="card_popular">
+                    <h3>
+                        <a href="https://www.yandex.ru/all">Посещаемое</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="https://market.yandex.ru">Маркет</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2zV0Hoj">Телевизоры LG</a>
+                        </li>
+                        <li>
+                            <a href="https://auto.ru">Авто.ру</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2B96Yui"> Mercedes новые и б/у</a>
+                        </li>
+                        <li>
+                            <a href="https://realty.yandex.ru/">Недвижимость</a>
+                            <span> - </span>
+                            <a href="https://realty.yandex.ru/">ипотека</a>
+                        </li>
+                        <li>
+                            <a href="https://rabota.yandex.ru/">Работа</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2zoCJCE">водителем</a>
+                        </li>
+                        <li>
+                            <a href="https://money.yandex.ru">Деньги</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2z7aunD">заплатить штраф ГИБДД</a>
+                        </li>
+                        <li>
+                            <a href="https://music.yandex.ru">Музыка</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2zWf1wE">для йоги</a>
+                        </li>
+                        <li>
+                            <a href="https://avia.yandex.ru/">Авиабилеты</a>
+                            <span> - </span>
+                            <a href="http://bit.ly/2zX2qJp">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_jams">
+                    <h3>
+                        <a href="https://yandex.ru/maps/54/yekaterinburg/probki">
+                            Пробки 4 балла
+                        </a>
+                    </h3>
+                    <span>Местами затруднения</span>
+                </div>
+                <div class="card_tv">
+                    <h3>
+                        <a href="https://tv.yandex.ru/">Телепрограмма</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <span class="time">15:00</span>
+                            <span>
+                                <span>
+                                    <a href="#">Кухня</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">СТС</a>
+                                </span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="time">15:00</span>
+                            <span>
+                                <span>
+                                    <a href="#">Мистические истории</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">ТВ-3</a>
+                                </span></span>
+                        </li>
+                        <li>
+                            <span class="time">15:05</span>
+                            <span>
+                                <span>
+                                    <a href="#">Мисс Марпл Агаты Кристи</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">ТВ Центр</a>
+                                </span></span>
+                        </li>
+                        <li>
+                            <span class="time">15:15</span>
+                            <span>
+                                <span>
+                                    <a href="#">Давай поженимся!</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">Первый</a>
+                                </span></span>
+                        </li>
+                        <li>
+                            <span class="time">15:20</span>
+                            <span>
+                                <span>
+                                    <a href="#">Страсть</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">Пятый канал</a>
+                                </span></span>
+                        </li>
+                        <li>
+                            <span class="time">15:30</span>
+                            <span>
+                                <span>
+                                    <a href="#">Реальные пацаны</a>
+                                </span>
+                                <span class="chanel">
+                                    <a href="#">ТНТ</a>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_map">
+                    <h3>
+                        <a href="https://yandex.ru/maps/54/yekaterinburg/">
+                            Карта Екатеринбурга</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">Такси</a>
+                        </li>
+                        <li>
+                            <a href="#">Расписания</a>
+                        </li>
+                        <li>
+                            <a href="#">Междугородные автобусы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_auto">
+                    <h3>
+                        <a href="http://www.zr.ru/news/">Автомобильные новости</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            Закон един для всех: миллиардершу оштрафовали и 
+                            посадили в тюрьму за пьяную езду
+                        </li>
+                        <li>
+                            Паук взял «в заложники» девушку в автомобиле. 
+                            Она не растерялась!
+                        </li>
+                        <li>
+                            На трассе М-4 «Дон» опрокинулся автобус. 
+                            Есть пострадавшие
+                        </li>
+                        <li>
+                            Назван лучший автомобиль года для женщин — 
+                            странный выбор жюри
+                        </li>
+                        <li>
+                            За пьяную езду без прав священник отделался штрафом
+                        </li>
+                        <li>
+                            BMW отзывает все i3 в США — виноваты женщины ростом до 152 см!
+                        </li>
+                        <li>
+                            В Московской области придумали новый 
+                            дорожный знак — скоро на парковках
+                        </li>
+                        <li>
+                            В США продают старую Ниву: она дороже Audi S4 Avant!
+                        </li>
+                        <li>
+                            Лондон переведет автобусы на... кофе!
+                        </li>
+                        <li>
+                            Лимузин для Путина: началось предсерийное производство
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_posters">
+                    <h3>
+                        <a href="https://afisha.yandex.ru/yekaterinburg">Афиша</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <span>
+                                <a href="#">Тайна Коко</a>
+                            </span>
+                            <span>
+                                премьера в чт
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#">Тор: Рагнарёк</a>
+                            </span>
+                            <span>
+                                фэнтези
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#">Лига справедливости</a>
+                            </span>
+                            <span>
+                                фантастика
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#">Убийство в Восточном экспрессе</a>
+                            </span>
+                            <span>
+                                драма
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
