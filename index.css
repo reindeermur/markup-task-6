@@ -10,7 +10,7 @@ main
         'y y s s s s w r'
         'l i p p p p w r'
         'l i t t t t w r';
-        vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 a
@@ -113,9 +113,8 @@ span
 .settings_tabs
 {
     text-align: left;
-    width: 150px;
     position: absolute;
-    margin-top: 40px; 
+    margin-top: 40px;
     padding: 15px;
     width: 170px;
     box-shadow: 0 6px 8px 0 rgba(0,0,0,.2);
@@ -141,7 +140,7 @@ input[name='settings']:checked ~ .settings_tabs
     display: none;
 }
 
-.content_news>li
+.content_news > li
 {
     list-style-type: disc;
 }
@@ -229,7 +228,7 @@ ul
 
 .card_f
 {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -249,7 +248,7 @@ nav
     margin-bottom: 0;
 }
 
-.search_wrapp >input:focus
+.search_wrapp > input:focus
 {
     outline: 0;
 }
