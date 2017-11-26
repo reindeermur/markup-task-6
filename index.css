@@ -10,18 +10,13 @@ main
         'y y s s s s w r'
         'l i p p p p w r'
         'l i t t t t w r';
-    vertical-align: bottom;
+        vertical-align: bottom;
 }
 
 a
 {
     text-decoration: none;
     color: #000;
-}
-
-.mail
-{
-    text-align: center;
 }
 
 .val
@@ -38,7 +33,10 @@ a
 }
 
 a:hover,
-.first-letter
+.first-letter,
+.one_joke > label:hover,
+.joke_section:hover,
+.open:hover
 {
     color: #d60606;
 }
@@ -67,7 +65,8 @@ span
 .tabs_link,
 .now,
 .concert,
-.j > label
+.one_joke > label,
+.joke_section
 {
     color: #5936f7;
 }
@@ -77,14 +76,72 @@ span
     grid-area: y;
 }
 
+.settings
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.open
+{
+    float: left;
+}
+
+.settings_tabs label::before
+{
+    content: '';
+    background-image: url('off.png');
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+}
+
+#popular:checked ~ .settings .settings_tabs label[for='popular']::before,
+#joke:checked ~ .settings .settings_tabs label[for='joke']::before,
+#tv:checked ~ .settings .settings_tabs label[for='tv']::before,
+#auto:checked ~ .settings .settings_tabs label[for='auto']::before,
+#weather:checked ~ .settings .settings_tabs label[for='weather']::before,
+#sity_map:checked ~ .settings .settings_tabs label[for='sity_map']::before,
+#jams:checked ~ .settings .settings_tabs label[for='jams']::before,
+#posters:checked ~ .settings .settings_tabs label[for='posters']::before
+{
+    background-image: url('on.png');
+}
+
+.settings_tabs
+{
+    text-align: left;
+    width: 150px;
+    position: absolute;
+    margin-top: 40px; 
+    padding: 15px;
+    width: 170px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,.2);
+}
+
+input[name='settings']:checked ~ .settings_tabs
+{
+    display: block;
+}
+
 .settings_tabs,
 .set_check,
-.j > input
+.one_joke > input,
+#popular:not(:checked) ~ .categories .column1 .card_popular,
+#joke:not(:checked) ~ .categories .column1 .card_joke,
+#tv:not(:checked) ~ .categories .column2 .card_tv,
+#auto:not(:checked) ~ .categories .column2 .card_auto,
+#weather:not(:checked) ~ .categories .column3 .card_weather,
+#sity_map:not(:checked) ~ .categories .column3 .card_map,
+#jams:not(:checked) ~ .categories .column3 .card_jams,
+#posters:not(:checked) ~ .categories .column3 .card_posters
 {
     display: none;
 }
 
-.content_news > li
+.content_news>li
 {
     list-style-type: disc;
 }
@@ -109,13 +166,13 @@ ul
 .settings
 {
     grid-area: w;
-    text-align: right;
+    text-align: center;
 }
 
 .mail
 {
     grid-area: r;
-    text-align: right;
+    text-align: center;
 }
 
 .news
@@ -141,8 +198,7 @@ ul
 .categories
 {
     display: flex;
-    justify-content: space-between;
-    margin: 5px;
+    justify-content: flex-start;
     grid-area: t;
 }
 
@@ -157,7 +213,7 @@ ul
 {
     margin-bottom: 30px;
     width: 250px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .elem
@@ -173,7 +229,7 @@ ul
 
 .card_f
 {
-    display: flex;
+    display:flex;
     align-items: center;
 }
 
@@ -193,9 +249,9 @@ nav
     margin-bottom: 0;
 }
 
-.search_wrapp > input:focus
+.search_wrapp >input:focus
 {
-    outline: none;
+    outline: 0;
 }
 
 .search_wrapp > button
@@ -221,8 +277,32 @@ nav
     height: 240px;
 }
 
-.j
+.one_joke
 {
     width: 250px;
 }
 
+#j-1:checked ~ .j-1,
+#j-2:checked ~ .j-2,
+#j-3:checked ~ .j-3
+{
+    display: block;
+}
+
+.one_joke > p.text
+{
+    height: 100px;
+}
+
+label[for^='j-'],
+.open
+{
+    cursor: pointer;
+}
+
+input[name='refresh'],
+input[name='n'],
+.one_joke
+{
+    display: none;
+}

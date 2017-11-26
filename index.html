@@ -7,6 +7,14 @@
 </head>
 <body>
     <main>
+        <input type="checkbox" name="n" id="popular" checked>
+        <input type="checkbox" name="n" id="joke" checked>
+        <input type="checkbox" name="n" id="tv" checked>
+        <input type="checkbox" name="n" id="auto" checked>
+        <input type="checkbox" name="n" id="weather" checked>
+        <input type="checkbox" name="n" id="sity_map" checked>
+        <input type="checkbox" name="n" id="jams" checked>
+        <input type="checkbox" name="n" id="posters" checked>
         <div class="map">
             <span>
                 <img src="geo.svg" alt="">
@@ -18,42 +26,17 @@
         <div class="settings">
             <input type="checkbox" name="settings" id="settings" class="set_check">
             <label for="settings" class="open">
-                <a href="#">Настройки</a>
+                Настройки
             </label>
             <div class="settings_tabs">
-                <ul>
-                    <li>
-                        <input type="checkbox" id="popular" checked>
-                        <label for="popular">Посещяемое</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="joke" checked>
-                        <label for="joke">Лучшие анекдоты</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="tv" checked>
-                        <label for="tv">Телепрограмма</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="auto" checked>
-                        <label for="auto">Автомобильные новости</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="weather" checked>
-                        <label for="weather">Погода</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="sity_map" checked>
-                        <label for="sity_map">Карта Екатеринбурга</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="jams" checked>
-                        <label for="jams">Пробки</label></li>
-                    <li>
-                        <input type="checkbox" id="posters" checked>
-                        <label for="posters">Афиша</label>
-                    </li>
-                </ul>
+                <label for="popular">Посещяемое</label><br>
+                <label for="joke">Лучшие анекдоты</label><br>
+                <label for="tv">Телепрограмма</label><br>
+                <label for="auto">Автомобильные новости</label><br>
+                <label for="weather">Погода</label><br>
+                <label for="sity_map">Карта Екатеринбурга</label><br>
+                <label for="jams">Пробки</label><br>
+                <label for="posters">Афиша</label>
             </div>
         </div>
         <div class="mail">
@@ -197,15 +180,28 @@
                         </li>
                     </ul>
                 </div>
-                <div class="сard_joke cards">
+                <div class="card_joke cards">
                     <h3>
                         <a href="#" class="them">Лучшие анекдоты</a>
                     </h3>
-                    <div class="j">
-                            <p>Раздел: <a href="#">короткие</a></p>
-                        <p class="text">После греха чревоугодия 
-                            становишься неповоротлив в грехе прелюбодеяния.</p>
-                        <a class="info" href="#">Хочу смеяться 5 минут</a>
+                    <input type="radio" name="refresh" id="j-1" checked>
+                    <input type="radio" name="refresh" id="j-2">
+                    <input type="radio" name="refresh" id="j-3">
+                    <div class="one_joke j-1">
+                            <p>Раздел: <a class="joke_section" href="#">короткие</a></p>
+                        <p class="text">После греха чревоугодия становишься 
+                            неповоротлив в грехе прелюбодеяния.</p>
+                        <label for="j-2">Хочу смеяться 5 минут</label>
+                    </div>
+                    <div class="one_joke j-2">
+                            <p>Раздел: <a class="joke_section" href="#">короткие</a></p>
+                        <p class="text">Чтобы понять женщину, нужно думать случайные мысли.</p>
+                        <label for="j-3">Хочу смеяться 5 минут</label>
+                    </div>
+                    <div class="one_joke j-3">
+                            <p>Раздел: <a class="joke_section" href="#">короткие</a></p>
+                        <p class="text">Ничего так не согревает душу, как холодное пиво.</p>
+                        <label for="j-1">Хочу смеяться 5 минут</label>
                     </div>
                 </div>
             </div>
@@ -313,7 +309,7 @@
                 </div>
             </div>
             <div class="column3">
-                <div class="card weather cards">
+                <div class="card_weather cards">
                     <h3 class="card_f">
                         <span>
                             <a href="https://yandex.ru/pogoda/yekaterinburg" class="them">
