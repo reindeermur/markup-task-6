@@ -1,20 +1,228 @@
-body
+main
 {
-    min-width: 800px;
+    min-width: 1300px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 10% 10% 15% 15% 15% 15% auto auto;
+    grid-template-rows: 50px 250px 100px auto auto;
+    grid-template-areas: 'm m m m m m w r'
+        'd d n n n a w r'
+        'y y s s s s w r'
+        'l i p p p p w r'
+        'l i t t t t w r';
+        vertical-align: bottom;
 }
 
 a
 {
-    color: #535252;
     text-decoration: none;
+    color: #000;
 }
 
-a:hover
+.mail
 {
-    color: #961818;
+    text-align: center;
 }
 
-.settings_tabs
+.val
+{
+    font-weight: bold;
+}
+
+.example_search,
+.persent,
+.date,
+.info
+{
+    color: #6b6b6b;
+}
+
+a:hover,
+.first-letter
+{
+    color: #d60606;
+}
+
+.first-letter
+{
+    padding-right: 0;
+}
+
+.tabs_link
+{
+    padding-right: 15px;
+}
+
+span
+{
+    padding-right: 10px;
+}
+
+.loca
+{
+    color: #6fabfa;
+}
+
+.them,
+.tabs_link,
+.now,
+.concert,
+.j > label
+{
+    color: #5936f7;
+}
+
+.logo
+{
+    grid-area: y;
+}
+
+.settings_tabs,
+.set_check,
+.j > input
 {
     display: none;
 }
+
+.content_news>li
+{
+    list-style-type: disc;
+}
+
+li
+{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul
+{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.map
+{
+    grid-area: m;
+}
+
+.settings
+{
+    grid-area: w;
+    text-align: right;
+}
+
+.mail
+{
+    grid-area: r;
+    text-align: right;
+}
+
+.news
+{
+    grid-area: n;
+}
+
+.advertising
+{
+    grid-area: a;
+}
+
+.search
+{
+    grid-area: s;
+}
+
+.photo
+{
+    grid-area: p;
+}
+
+.categories
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    grid-area: t;
+}
+
+.currencies,
+.map,
+.search_wrapp
+{
+    display: flex;
+}
+
+.cards
+{
+    margin-bottom: 30px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.elem
+{
+    margin-right: 5%;
+}
+
+.logo
+{
+    margin-top: 8px;
+    text-align: right;
+}
+
+.card_f
+{
+    display:flex;
+    align-items: center;
+}
+
+nav
+{
+    margin-bottom: 10px;
+}
+
+.search_wrapp > input
+{
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: 40px;
+    justify-content: flex-start;
+    width: 88%;
+    border: 2px solid #ffdd61;
+    margin-bottom: 0;
+}
+
+.search_wrapp >input:focus
+{
+    outline: none;
+}
+
+.search_wrapp > button
+{
+    height: 40px;
+    width: 12%;
+    background-color: #ffdd61;
+    border: 2px solid #ffdd61;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.search_wrapp > div
+{
+    position: relative;
+    border: 20px solid transparent;
+    border-left: 12px solid #ffdd61;
+}
+
+.card_auto > div
+{
+    overflow-y: scroll;
+    height: 240px;
+}
+
+.j
+{
+    width: 250px;
+}
+
